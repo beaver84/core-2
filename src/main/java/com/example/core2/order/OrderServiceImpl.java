@@ -3,7 +3,9 @@ package com.example.core2.order;
 import com.example.core2.discount.DiscountPolicy;
 import com.example.core2.member.Member;
 import com.example.core2.member.MemberRepository;
+import org.springframework.stereotype.Component;
 
+@Component
 public class OrderServiceImpl implements OrderService {
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
